@@ -4,7 +4,7 @@
     "description": "Extension hỗ trợ team sưu tầm sưu truyện",
     "manifest_version": 2,
     "permissions": [
-        "tabs", "contextMenus", "storage", "activeTab",
+        "tabs", "storage", "activeTab",
         "https://truyencuatoi.com/*", "https://truyenfull.vn/*"
     ],
     "options_ui": {
