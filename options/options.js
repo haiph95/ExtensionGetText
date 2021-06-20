@@ -30,9 +30,7 @@ function restoreDefaultConfig() {
 }
 
 function saveTemplate(template) {
-    chrome.storage.sync.set({
-        template: template
-    }, () => {
+    chrome.storage.sync.set({ template }, () => {
         let alertBox =  document.getElementById("save_alert");
         alertBox.removeAttribute("hidden");
         setTimeout(() => {
