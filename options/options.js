@@ -42,11 +42,7 @@ function saveTemplate(template) {
 }
 
 function restoreOptions() {
-    chrome.storage.sync.get({
-        template: template
-    }, (data) => {
-        let {template} = data;
-        
+    chrome.storage.sync.get(['template'], ({ template }) => {        
         document.getElementById("template").value = template;
     })
 }
